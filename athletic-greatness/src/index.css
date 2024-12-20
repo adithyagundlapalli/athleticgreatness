@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@100..700&family=Rubik:wght@800&display=swap');
 
 html,
 body,
@@ -9,4 +10,8 @@ body,
   height: 100%;
   width: 100%;
   @apply text-white;
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+
 }   

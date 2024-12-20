@@ -10,14 +10,14 @@ const Navbar = (props: Props) => {
         <div className="navbar">
             <div className="navbar-container">
                 <div className="navbar-logo">
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="Athletic Greatness Logo" className='logo' />
                 </div>
                 <div className="navbar-menu">
-                    <a href="#" className="navbar-menu-item">Home</a>
-                    <a href="#" className="navbar-menu-item">About</a>
-                    <a href="#" className="navbar-menu-item">Services</a>
-                    <a href="#" className="navbar-menu-item">Pricing</a>
-                    <a href="#" className="navbar-menu-item">Contact</a>
+                    <a href="#" className="navbar-menu-item">HOME</a>
+                    <a href="#" className="navbar-menu-item">ABOUT</a>
+                    <a href="#" className="navbar-menu-item">SERVICES</a>
+                    <a href="#" className="navbar-menu-item">PRICING</a>
+                    <a href="#" className="navbar-menu-item">CONTACT</a>
                 </div>
                 {/* <div className="navbar__menu__icon">
                     <Bars3Icon className="navbar__menu__icon__bars" />

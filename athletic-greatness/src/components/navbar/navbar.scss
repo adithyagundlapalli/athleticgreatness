@@ -1,25 +1,36 @@
 
-
 .navbar-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background-color: #333;
+    background-color: #000;
     color: white;
-    height: 60px;
+    height: 115px;
+    margin: 0 100px;
+
+
+    .navbar-logo{
+        .logo{
+            width: 256px;
+            height: 83px;
+            object-fit: cover;
+            object-position: 0% 47%;
+        }
+    }
 
     .navbar-menu{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+
 
         .navbar-menu-item{
             margin: 0 10px;
+            font-size: 30px;
             cursor: pointer;
+        }
+
+        .navbar-menu-item:hover{
+            color: var(--primary-color);
         }
     }
 }
