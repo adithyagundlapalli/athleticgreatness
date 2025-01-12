@@ -3,15 +3,16 @@ import './variables.scss';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 import About from './components/about';
-
+import Services from './components/services';
 
 function App() {
 
   return (
-    <div className="app bg-black">
+    <div className="app">
       <Navbar />
       <Hero/>
       <About/>
+      <Services/>
     </div>
   )
 }

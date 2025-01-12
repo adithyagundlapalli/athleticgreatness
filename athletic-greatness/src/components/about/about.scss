@@ -6,6 +6,7 @@
     .about-container{
         display: flex;
         padding: 70px 0px 0px 100px;}
+        padding-right: 90px;
 
         .about-content{
             width: 50%;
@@ -54,13 +55,14 @@
             justify-content: center;
             align-items: center;
             margin-top: -80px;
+            margin-right: 40px;
 
             .blue-box{
                 width: 384px;
                 height: 496px;
                 border: var(--primary-color) 1px solid;
                 position: absolute;
-                right: 200px;
+                right: 290px;
                 z-index: 1;
             }
 
@@ -70,7 +72,7 @@
                 border: white 1px solid;
                 position: absolute;
                 margin-top: 250px;
-                right: 70px;
+                right: 160px;
                 z-index: 1;
             }
 

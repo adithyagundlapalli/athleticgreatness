@@ -9,6 +9,7 @@ const Hero: React.FC<Props> = (props) => {
 
     return (
         <div className="hero">
+            <hr className='line'/>
             <div className="hero-container">
                 <div className="hero-image">
                     <div className="gradient"></div>
