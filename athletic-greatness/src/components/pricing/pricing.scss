@@ -9,73 +9,97 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
 
     .header {
+        color: #007BFF; // Bright blue color for the header
+        font-size: 70px;
+        margin-bottom: 5px;
         text-align: center;
-        color: var(--primary-color);
-        font-size: 3rem;
         font-family: 'Bebas Neue', sans-serif;
-        margin-bottom: 10px;
     }
 
     .description {
         text-align: center;
-        color: white;
         font-size: 1.2rem;
-        font-family: 'Poppins', sans-serif;
         margin-bottom: 40px;
+        line-height: 1.5; // Add line height for spacing
+        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+
     }
 
     .pricing-cards {
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 70px;
         width: 100%;
         max-width: 1200px;
+        flex-wrap: wrap; // Allow wrapping for responsiveness
 
         .pricing-card {
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 2px solid var(--primary-color);
+            background-color: black; // Set card background to black
+            border: 2px solid #007BFF; // Border color matching the header
             border-radius: 10px;
-            padding: 20px;
+            padding: 20px; // Maintain original padding
             text-align: center;
             color: white;
-            width: 300px; // Set a fixed width for the cards
+            width: 428px; // Fixed width for cards
+            height: 594px; // Fixed height for cards
+            transition: transform 0.3s ease, background-color 0.3s ease; // Smooth transition for hover effects
+            margin: 10px; // Add margin for spacing between cards
+
+            &:hover {
+                background-color: rgba(0, 123, 255, 0.2); // Light blue background on hover
+                transform: scale(1.05); // Slightly enlarge the card on hover
+            }
 
             .card-title {
                 font-size: 1.5rem;
-                font-family: 'Bebas Neue', sans-serif;
-                margin-bottom: 10px;
+                margin-bottom: 15px; // Increased margin for spacing
+                font-family: 'Bebas Neue', sans-serif; // Use Bebas Neue for card titles
             }
 
             .card-price {
-                font-size: 2rem;
-                margin: 10px 0;
+                font-size: 48px;
+                margin: 15px 0; // Increased margin for spacing
+                color: var(--primary-color)
             }
 
             .includes,
             .benefits {
-                font-size: 1rem;
-                margin: 10px 0;
+                font-size: 32px;
+                margin: 15px 0; // Increased margin for spacing
+            }
+
+            .content{
+                font-size: 20px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 100;
+
+                
             }
 
             .free-session {
-                font-size: 1.2rem;
+                font-size: 36px;
                 font-weight: bold;
-                margin: 20px 0;
+                margin: 20px 0; // Increased margin for spacing
             }
 
             .choose-button {
-                background-color: blue;
+                background-color: #007BFF; // Blue button
                 color: white;
-                padding: 10px 20px;
+                width: 368px; // Set button width
+                padding: 10px; // Maintain padding for better button size
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
                 font-size: 1rem;
+                transition: background-color 0.3s ease; // Smooth transition for hover effect
 
                 &:hover {
-                    background-color: darkblue;
+                    background-color: rgb(11, 11, 120); // Darker blue on hover
                 }
             }
         }
