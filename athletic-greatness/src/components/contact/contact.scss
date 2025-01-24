@@ -1,0 +1,118 @@
+.contact{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    border: 2px solid rgba(0, 123, 255, 0.5);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        transform: skewY(-2deg);
+    }
+
+    .contact-info {
+        z-index: 1;
+        width: 40%;
+        padding-right: 20px;
+
+        .contact-header {
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-details {
+            .contact-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+
+                .contact-icon {
+                    margin-right: 10px;
+                    color: #007BFF; // Blue color for icons
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        z-index: 1;
+        width: 50%;
+
+        .form-header {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+
+            .highlight {
+                color: #007BFF; // Blue color for highlighted text
+                font-weight: bold;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            input,
+            textarea {
+                background-color: #1e1e1e;
+                border: 1px solid #007BFF;
+                border-radius: 5px;
+                padding: 10px;
+                margin-bottom: 15px;
+                color: white;
+                font-size: 1rem;
+
+                &::placeholder {
+                    color: #aaa; // Light gray for placeholder text
+                }
+            }
+
+            .send-button {
+                background-color: #007BFF;
+                color: white;
+                padding: 12px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1rem;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: darkblue; // Darker blue on hover
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .contact-info,
+        .contact-form {
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+}
