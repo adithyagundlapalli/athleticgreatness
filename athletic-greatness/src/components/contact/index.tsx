@@ -10,7 +10,7 @@ type Props = {}
 const Contact = (props: Props) => {
   return (
     <div className="contact">
-
+        <img src={trapezoid} alt="Trapezoid" className="trapezoid" />
         <div className="contact-section">
             <div className="contact-info">
                 <h2 className="contact-header">CONTACT US</h2>
