@@ -41,7 +41,7 @@
 
                 .contact-icon {
                     margin-right: 10px;
-                    color: #007BFF; // Blue color for icons
+                    color: var(--primary-color); // Blue color for icons
                 }
             }
         }
@@ -56,7 +56,7 @@
             margin-bottom: 20px;
 
             .highlight {
-                color: #007BFF; // Blue color for highlighted text
+                color: var(--primary-color); // Blue color for highlighted text
                 font-weight: bold;
             }
         }
@@ -68,7 +68,7 @@
             input,
             textarea {
                 background-color: #1e1e1e;
-                border: 1px solid #007BFF;
+                border: 1px solid var(--primary-color);
                 border-radius: 5px;
                 padding: 10px;
                 margin-bottom: 15px;
@@ -81,7 +81,7 @@
             }
 
             .send-button {
-                background-color: #007BFF;
+                background-color: var(--primary-color);
                 color: white;
                 padding: 12px;
                 border: none;
@@ -91,7 +91,7 @@
                 transition: background-color 0.3s ease;
 
                 &:hover {
-                    background-color: darkblue; // Darker blue on hover
+                    background-color: rgb(7, 7, 113); // Darker blue on hover
                 }
             }
         }
